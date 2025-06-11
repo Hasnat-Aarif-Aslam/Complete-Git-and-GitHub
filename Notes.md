@@ -136,11 +136,11 @@ A merge conflict happens when Git can’t automatically decide how to combine ch
 # **Undoing Changes:**
 **CASE 1: Undo Changes in the Working Directory (Before git add)**
 * You edited a file but haven't staged it.
-* git restore <file_name>
+* git restore file_name-here
 
 **Undo git add (Unstage File)**
 * You added a file to staging (git add) but want to remove it from staging
-* git reset <file_name>
+* git reset file_name-here
 
 **CASE 3: Undo a Commit (Locally)**
 * Option 1: Undo the commit, but keep changes staged
@@ -151,7 +151,7 @@ A merge conflict happens when Git can’t automatically decide how to combine ch
 * git reset --hard HEAD~1
 
 **CASE 4: Undo a Specific File to a Previous Commit**
-* git checkout <commit-id> -- <file>
+* git checkout paste-commit-id-here -- file-name-here
 
 **CASE 5: Undo a Commit That’s Already Pushed (Use Carefully)**
-* git revert <commit-id>
+* git revert paste-commit-id-here
