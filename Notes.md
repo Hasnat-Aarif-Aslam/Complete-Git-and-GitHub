@@ -145,9 +145,13 @@ A merge conflict happens when Git can’t automatically decide how to combine ch
 **CASE 3: Undo a Commit (Locally)**
 * Option 1: Undo the commit, but keep changes staged
 * git reset --soft HEAD~1  (HEAD means, the latest commit, and 1 means we only want to reset only 1 commit)
-
-**Undo the commit AND unstage files**
+* Option 2: Undo the commit AND unstage files**
 * git reset --mixed HEAD~1
-
-**Undo the commit and discard all changes (permanent)**
+* Option 3: Undo the commit and discard all changes (permanent)**
 * git reset --hard HEAD~1
+
+**CASE 4: Undo a Specific File to a Previous Commit**
+* git checkout <commit-id> -- <file>
+
+**CASE 5: Undo a Commit That’s Already Pushed (Use Carefully)**
+* git revert <commit-id>
