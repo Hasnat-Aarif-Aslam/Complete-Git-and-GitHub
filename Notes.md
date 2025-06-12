@@ -120,11 +120,17 @@ git merge branch_name      (for example: if i am at new branch right now, so i w
 
 # **Way 2: Using Pull Request (PR) on github**
 
+**A Pull Request (PR) is a GitHub feature used to propose changes from one branch (typically a feature branch) into another (usually main) on the remote repository. When a contributor pushes a new branch to GitHub and wants to merge their work into the main codebase, they create a PR. This allows:**
+* Code review by team members
 
-# **git pull is a command that fetches and applies changes from a remote repository (like GitHub) to your local working directory.**
-It is basically two Git operations combined:
-* Get the latest code from GitHub	git pull
-* Combine that code with your local copy	git merge (automatically done in pull)
+* Discussion of proposed changes
+
+* Approval before merging
+
+**Once the PR is approved and merged on GitHub, other developers can pull the latest changes to their local machines using:**
+* git pull origin main
+
+``Note: git pull is a Git command that combines git fetch (download changes) and git merge (apply changes locally). It is different from a Pull Request, which is part of GitHub's collaboration workflow.``
 
 
 # **Resolving Merge Conflicts:**
